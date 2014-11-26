@@ -13,19 +13,23 @@
 </div><!-- close .main-content -->
 
 <footer id="colophon" class="site-footer" role="contentinfo">
-	<div class="container">
-		<div class="row">
-			<div class="site-footer-inner col-sm-12">
+		<div id="footer">
+      <div class="container text-center">
+        <ul class="footer">
+        	<li><a href="index.html">Home</a></li>
+          	<li><a href="work.html">Work</a></li>
+          	<li><a href="contact.html">Contact</a></li>
+          	<li><a href="resume.pdf">Resume</a></li>
+          	<li><a href="https://twitter.com/kathrynrefined" target="_blank"><img src="<?php bloginfo('template_directory'); ?>-child/assets/images/social-twitter-white.png"></a></li>
+          	<li><a href="https://github.com/kathrynstoddard" target="_blank"><img src="<?php bloginfo('template_directory'); ?>-child/assets/images/social-github-white.png"></a></li>
+          	<li><a href="http://www.linkedin.com/in/kathrynpdx/" target="_blank"><img src="<?php bloginfo('template_directory'); ?>-child/assets/images/social-linkedin-white.png"></a></li>
+        </ul>
+				<div class="site-footer-inner col-sm-12">
+					<p>&copy;2014 Kathryn Stoddard</p>
 
-				<div class="site-info">
-					<?php do_action( 'kstheme_credits' ); ?>
-					<a href="http://wordpress.org/" title="<?php esc_attr_e( 'A Semantic Personal Publishing Platform', 'kstheme' ); ?>" rel="generator"><?php printf( __( 'Proudly powered by %s', 'kstheme' ), 'WordPress' ); ?></a>
-					<span class="sep"> | </span>
-                    <a class="credits" href="http://themekraft.com/" target="_blank" title="Themes and Plugins developed by Themekraft" alt="Themes and Plugins developed by Themekraft">Themes and Plugins developed by Themekraft.</a>
-				</div><!-- close .site-info -->
-
-			</div>
-		</div>
+					</div><!-- close .site-info -->
+      </div>
+    </div><!-- End footer -->
 	</div><!-- close .container -->
 </footer><!-- close #colophon -->
 
