@@ -22,6 +22,15 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Oswald', sans-serif;
 }
 
+.navbar {
+  padding: 15px 20px;
+  height: 75px;
+  background-color: #F8F8F8;
+}
+
+.nav {
+  display: inline;
+}
 .nav {
   padding-top: 10px;
 }
@@ -33,9 +42,10 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
 }
 
-.nav li {
+.inline-nav li {
   display: inline;
 }
+
 
 .right-nav {
   padding-top: 10px;
@@ -45,8 +55,16 @@ h1, h2, h3, h4, h5, h6 {
   padding-left: 15px;
 }
 
+ul.social-media {
+  list-style-type: none;
+}
+
+.social-media li {
+  display: inline;
+}
+
 .jumbotron {
-  margin-top: 60px;
+  margin-top: 55px;
   background: url(assets/images/bricks.jpg) no-repeat;
   color: #FFF;
   /*height: 600px;*/
@@ -208,6 +226,11 @@ input {
 .footer li {
   display: inline;
   padding-right: 10px;
+}
+
+.site-footer-inner p {
+  color: white;
+  font-size: .75em;
 }
 
 .hide {
