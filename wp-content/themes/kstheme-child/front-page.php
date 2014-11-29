@@ -18,8 +18,8 @@ get_header(); ?>
 
 <div class="jumbotron">
       <div class="container">
-        <h1>Kathryn Stoddard</h1>
-    		<h2>Jr. Web Developer</h2>
+        <h1><?php bloginfo('title'); ?></h1>
+    		<h2><?php bloginfo('description'); ?></h2>
     		<h3>Let's Build Something Together</h3>
     		<div class="contactme"><a href="contact.html">Contact Me</a></div>
       </div> <!-- End container -->
