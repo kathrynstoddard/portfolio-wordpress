@@ -14,12 +14,17 @@
 
 <footer id="colophon" class="site-footer" role="contentinfo">
 		<div id="footer">
+			<?php wp_nav_menu(
+				array(
+					'theme_location' => 'primary',
+					'container_class' => 'container text-center',
+					'menu_class' => 'footer',
+					'fallback_cb' => '',
+					'menu_id' => 'main-menu',
+				)
+			); ?>
       <div class="container text-center">
         <ul class="footer">
-        	<li><a href="index.html">Home</a></li>
-          	<li><a href="work.html">Work</a></li>
-          	<li><a href="contact.html">Contact</a></li>
-          	<li><a href="resume.pdf">Resume</a></li>
           	<li><a href="https://twitter.com/kathrynrefined" target="_blank"><img src="<?php bloginfo('template_directory'); ?>-child/assets/images/social-twitter-white.png"></a></li>
           	<li><a href="https://github.com/kathrynstoddard" target="_blank"><img src="<?php bloginfo('template_directory'); ?>-child/assets/images/social-github-white.png"></a></li>
           	<li><a href="http://www.linkedin.com/in/kathrynpdx/" target="_blank"><img src="<?php bloginfo('template_directory'); ?>-child/assets/images/social-linkedin-white.png"></a></li>
