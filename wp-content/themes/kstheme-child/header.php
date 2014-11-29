@@ -25,11 +25,11 @@
 	<?php do_action( 'before' ); ?>
 
 <nav class="site-navigation">
-	<div class="container">
 		<div class="row">
-			<div class="site-navigation-inner col-sm-12">
-				<div class="navbar navbar-default">
-					<div class="navbar-header">
+				<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+					<div class="container">
+						<a href="index.html"><img src="<?php bloginfo('template_directory'); ?>-child/assets/images/k.png"></a>
+					<div class="navbar-header col-md-2 pull-right">
 					<!-- .navbar-toggle is used as the toggle for collapsed navbar content -->
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
 						<span class="sr-only">Toggle navigation</span>
@@ -37,51 +37,24 @@
 					  <span class="icon-bar"></span>
 					  <span class="icon-bar"></span>
 					</button>
-
-					<!-- Your site title as branding in the menu -->
-					<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
-				  </div>
-
-				<!-- The WordPress Menu goes here -->
-			<?php wp_nav_menu(
-				array(
-					'theme_location' => 'primary',
-					'container_class' => 'collapse navbar-collapse navbar-responsive-collapse',
-					'menu_class' => 'nav navbar-default',
-					'fallback_cb' => '',
-					'menu_id' => 'main-menu',
-					'walker' => new wp_bootstrap_navwalker()
-				)
-			); ?>
-
+									<!-- The WordPress Menu goes here -->
+								<?php wp_nav_menu(
+									array(
+										'theme_location' => 'primary',
+										'container_class' => 'collapse navbar-collapse navbar-responsive-collapse',
+										'menu_class' => 'nav right-nav inline-nav',
+										'after' => '//',
+										'fallback_cb' => '',
+										'menu_id' => 'main-menu',
+									)
+								); ?>
+								<ul class="social-media pull-right">
+								<li><a href="https://twitter.com/kathrynrefined" target="_blank"><img src="<?php bloginfo('template_directory'); ?>-child/assets/images/social-twitter.png"></a></li>
+								<li><a href="https://github.com/kathrynstoddard" target="_blank"><img src="<?php bloginfo('template_directory'); ?>-child/assets/images/social-github.png"></a></li>
+								<li><a href="http://www.linkedin.com/in/kathrynpdx/" target="_blank"><img src="<?php bloginfo('template_directory'); ?>-child/assets/images/social-linkedin.png"></a></li>
+						</ul>
+					</div>
+				</div>
 				</div><!-- .navbar -->
-			</div>
-		</div>
-	</div><!-- .container -->
+		</div><!-- .row -->
 </nav><!-- .site-navigation -->
-
-	<!-- Fixed navbar -->
-    <div class="nav navbar-default navbar-fixed-top">
-      <div class="container">
-        <ul class="pull-left">
-          <li><a href="index.html"><img src="<?php bloginfo('template_directory'); ?>-child/assets/images/k.png"></a></li>
-        </ul>
-        <ul class="pull-right right-nav">
-        	  <li><a href="index.html">Home</a></li>
-            <li>&nbsp;//&nbsp;</li>
-          	<li><a href="work.html">Work</a></li>
-            <li>&nbsp;//&nbsp;</li>
-          	<li><a href="contact.html">Contact</a></li>
-            <li>&nbsp;//&nbsp;</li>
-          	<li><a href="resume.pdf">Resume</a></li>
-          	<li class="social-media"><a href="https://twitter.com/kathrynrefined" target="_blank"><img src="<?php bloginfo('template_directory'); ?>-child/assets/images/social-twitter.png"></a></li>
-          	<li><a href="https://github.com/kathrynstoddard" target="_blank"><img src="<?php bloginfo('template_directory'); ?>-child/assets/images/social-github.png"></a></li>
-          	<li><a href="http://www.linkedin.com/in/kathrynpdx/" target="_blank"><img src="<?php bloginfo('template_directory'); ?>-child/assets/images/social-linkedin.png"></a></li>
-        </ul>
-      </div> <!-- End container -->
-    </div> <!-- End nav -->
-
-<div class="main-content">
-	<div class="container">
-		<div class="row">
-			<div id="content" class="main-content-inner col-sm-12 col-md-8">
