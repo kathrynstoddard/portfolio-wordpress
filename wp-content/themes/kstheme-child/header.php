@@ -42,7 +42,7 @@
 									array(
 										'theme_location' => 'primary',
 										'container_class' => 'collapse navbar-collapse navbar-responsive-collapse',
-										'menu_class' => 'nav right-nav inline-nav',
+										'menu_class' => 'nav right-nav',
 										'after' => '//',
 										'fallback_cb' => '',
 										'menu_id' => 'main-menu',

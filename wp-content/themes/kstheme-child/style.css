@@ -24,7 +24,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar {
   padding: 15px 20px;
-  height: 75px;
   background-color: #F8F8F8;
 }
 
@@ -41,11 +40,6 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
   text-transform: uppercase;
 }
-
-.inline-nav li {
-  display: inline;
-}
-
 
 .right-nav {
   padding-top: 10px;
