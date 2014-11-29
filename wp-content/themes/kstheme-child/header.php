@@ -26,10 +26,10 @@
 
 <nav class="site-navigation">
 		<div class="row">
-				<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+			<div class="site-navigation-inner col-sm-12">
+				<div class="navbar navbar-default">
 					<div class="container">
-						<a href="index.html"><img src="<?php bloginfo('template_directory'); ?>-child/assets/images/k.png"></a>
-					<div class="navbar-header col-md-2 pull-right">
+					<div class="navbar-header">
 					<!-- .navbar-toggle is used as the toggle for collapsed navbar content -->
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
 						<span class="sr-only">Toggle navigation</span>
@@ -37,24 +37,32 @@
 					  <span class="icon-bar"></span>
 					  <span class="icon-bar"></span>
 					</button>
-									<!-- The WordPress Menu goes here -->
-								<?php wp_nav_menu(
-									array(
-										'theme_location' => 'primary',
-										'container_class' => 'collapse navbar-collapse navbar-responsive-collapse',
-										'menu_class' => 'nav right-nav',
-										'after' => '//',
-										'fallback_cb' => '',
-										'menu_id' => 'main-menu',
-									)
-								); ?>
-								<ul class="social-media pull-right">
-								<li><a href="https://twitter.com/kathrynrefined" target="_blank"><img src="<?php bloginfo('template_directory'); ?>-child/assets/images/social-twitter.png"></a></li>
-								<li><a href="https://github.com/kathrynstoddard" target="_blank"><img src="<?php bloginfo('template_directory'); ?>-child/assets/images/social-github.png"></a></li>
-								<li><a href="http://www.linkedin.com/in/kathrynpdx/" target="_blank"><img src="<?php bloginfo('template_directory'); ?>-child/assets/images/social-linkedin.png"></a></li>
-						</ul>
-					</div>
-				</div>
+
+					<!-- Your site title as branding in the menu -->
+					<a href="index.html"></a>
+					<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="<?php bloginfo('template_directory'); ?>-child/assets/images/k.png"><?php bloginfo( 'name' ); ?></a>
+				  </div>
+
+				<!-- The WordPress Menu goes here -->
+			<?php wp_nav_menu(
+				array(
+					'theme_location' => 'primary',
+					'container_class' => 'collapse navbar-collapse navbar-responsive-collapse',
+					'menu_class' => 'nav navbar-nav pull-right',
+					'fallback_cb' => '',
+					'menu_id' => 'main-menu',
+					'after' => '//',
+					'walker' => new wp_bootstrap_navwalker()
+				)
+			); ?>
+			<ul class="social-media pull-right">
+			<li><a href="https://twitter.com/kathrynrefined" target="_blank"><img src="<?php bloginfo('template_directory'); ?>-child/assets/images/social-twitter.png"></a></li>
+			<li><a href="https://github.com/kathrynstoddard" target="_blank"><img src="<?php bloginfo('template_directory'); ?>-child/assets/images/social-github.png"></a></li>
+			<li><a href="http://www.linkedin.com/in/kathrynpdx/" target="_blank"><img src="<?php bloginfo('template_directory'); ?>-child/assets/images/social-linkedin.png"></a></li>
+	</ul>
+</div><!-- .container -->
 				</div><!-- .navbar -->
-		</div><!-- .row -->
+			</div>
+		</div>
+
 </nav><!-- .site-navigation -->
