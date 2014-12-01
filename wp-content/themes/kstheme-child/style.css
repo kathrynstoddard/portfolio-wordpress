@@ -17,73 +17,65 @@
 body {
   font-family: 'Lato', sans-serif;
 }
-
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Oswald', sans-serif;
 }
-
-.navbar {
-  padding: 15px 20px;
+/* Header.php styles */
+nav.site-navigation {
   background-color: #F8F8F8;
 }
-
-.nav {
-  display: inline;
+.navbar {
+  padding: 10px 0;
+  background-color: #F8F8F8;
 }
-.nav {
+.navbar-default {
+  border: none;
+}
+.navbar-nav {
   padding-top: 10px;
 }
-
+.navbar-brand img {
+  display: inline-block;
+  padding-right: 10px;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+border: none;
+}
 .nav a {
   color: #333;
   font-size: 11px;
   font-weight: bold;
   text-transform: uppercase;
 }
-
-.right-nav {
-  padding-top: 10px;
-}
-
-.nav-menu {
-  display: inline;
-}
-
+/*Social Media menu styles*/
 .social-media {
   padding-left: 15px;
 }
-
 ul.social-media {
   list-style-type: none;
 }
-
 .social-media li {
   display: inline;
 }
-
+/*front-page.php styles*/
 .jumbotron {
-  margin-top: 55px;
   background: url(assets/images/bricks.jpg) no-repeat;
   color: #FFF;
   /*height: 600px;*/
   background-size: cover;
   margin-bottom: 0px;
 }
-
 .jumbotron h1 {
   font-size: 6em;
 }
-
 .jumbotron h2 {
   font-size: 3.5em;
 }
-
 .jumbotron h3 {
   font-size: 2.5em;
   font-family: 'Lato', sans-serif;
   padding-bottom: 15px;
 }
-
 .contactme a {
   background-color: #E74C3C;
   padding: 15px 30px;
@@ -97,77 +89,62 @@ ul.social-media {
   color: #E74C3C;
   font-size: 1.5em;
 }
-
 #skills {
   background-color: #F8F8F8;
   margin: 0;
 }
-
 .skills {
   padding-top: 100px;
   padding-bottom: 100px;
   background-color: #ecf0f1;
 }
-
 .skills p {
   font-size: 1.25em;
   text-align: center;
 }
-
 .skills h3 {
   color: #00b6ad;
   text-align: center;
 }
-
 .skills span {
   margin: 0 auto;
 }
-
 .glyphicon {
   display: block;
   margin: 0 auto;
 }
-
 .skills span.glyphicon {
   font-size: 5em;
   margin: 0 auto;
   text-align: center;
 }
-
 .process {
   margin: 50px 0;
   padding-top: 50px;
   padding-bottom: 50px;
 }
-
 .process p {
   font-size: 1.25em;
 }
-
 .process h3 {
   color: #00b6ad;
 }
-
 .process img {
   width: 95%;
 }
-
 input {
   margin-bottom: 10px;
 }
-
 .redorange {
   color: #E74C3C;;
 }
-
 .teal {
   color: #00b6ad;;
 }
-
+/*Contact Form page styles*/
 .contact {
   margin: 25px 0;
 }
-
 .contact button {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -176,69 +153,58 @@ input {
   color: #fff;
   font-size: 1.25em;
 }
-
 .contact button:hover {
   background-color: #fff;
   color: #E74C3C;
 }
-
 .contact li {
   display: inline;
   padding-right: 10px;
 }
-
 .contact img {
   width: 7%;
 }
-
+/*Work page styles*/
 .work {
   margin-top: 50px;
   padding-top: 25px;
   padding-bottom: 50px;
 }
-
 #webapps h4 {
   padding-top: 25px;
 }
-
 .breadcrumb {
   background-color: #fff;
   padding-left: 0px;
 }
-
 .breadcrumb a {
   color: #000;
 }
-
+/*footer.php styles*/
 #footer {
   background-color: #262732;
   padding-top: 75px;
   padding-bottom: 75px;
   font-size: 1.5em;
 }
-
 .footer a {
   color: #fff;
 }
-
 .footer li {
   display: inline;
   padding-right: 10px;
 }
-
 .site-footer-inner p {
   color: white;
   font-size: .75em;
 }
-
+/*Work post styles*/
 .hide {
   display: none;
 }
-
 .show {
   display: initial;
 }
-
 .grid-block-container {
   width: 970px;
   margin: 0 auto;
@@ -250,7 +216,6 @@ input {
   height: 300px;
   margin: 0 0 30px 20px;
 }
-
 .caption {
   display: none;
   position: absolute;
@@ -262,29 +227,23 @@ input {
   height: 300px;
   background: url(../images/trans-black-50.png);
 }
-
 .caption h4, .caption p {
   color: #fff;
 }
-
-
 .caption p {
   line-height: 1.5em;
   font-weight: bold;
 }
-
 .caption a.learn-more {
   padding: 5px 10px;
   background: #E74C3C;
   color: #fff;
   text-decoration: none;
 }
-
 .caption a.learn-more:hover {
   background: #fff;
   color: #E74C3C;
 }
-
 .clear {
   clear: both;
 }
@@ -303,26 +262,20 @@ input {
   body {
     font-size: 1em;
   }
-
     .jumbotron {
-      margin-top: 60px;
       height: 400px;
     }
-
     .skills, .process, .footer {
       padding-top: 25px;
       padding-bottom: 25px;
     }
-
     .process img {
       margin: 0 auto;
     }
-
     .footer img {
       width: 3%;
     }
 }
-
 @media (max-width: 685px) {
   .grid-block {
     float: none;
@@ -331,25 +284,20 @@ input {
 /*Small Screens*/
 @media (max-width: 480px) {
     .jumbotron {
-      margin-top: 60px;
       height: 400px;
     }
-
     .skills, .process, .footer {
       padding-top: 25px;
       padding-bottom: 25px;
     }
-
     .process img {
       width: 95%;
       margin: 0 auto;
     }
-
     .footer img {
       width: 4%;
     }
 }
-
 @media (max-width: 460px) {
   .work {
     margin-top: 100px;
@@ -359,8 +307,5 @@ input {
 @media (max-width: 460px) {
   body {
     font-size: .95em;
-  }
-  .jumbotron {
-    margin-top: 90px;
   }
 }

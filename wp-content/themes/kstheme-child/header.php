@@ -43,6 +43,11 @@
 					<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="<?php bloginfo('template_directory'); ?>-child/assets/images/k.png"><?php bloginfo( 'name' ); ?></a>
 				  </div>
 
+			<!-- <ul class="social-media pull-right">
+				<li><a href="https://twitter.com/kathrynrefined" target="_blank"><img src="<?php bloginfo('template_directory'); ?>-child/assets/images/social-twitter.png"></a></li>
+				<li><a href="https://github.com/kathrynstoddard" target="_blank"><img src="<?php bloginfo('template_directory'); ?>-child/assets/images/social-github.png"></a></li>
+				<li><a href="http://www.linkedin.com/in/kathrynpdx/" target="_blank"><img src="<?php bloginfo('template_directory'); ?>-child/assets/images/social-linkedin.png"></a></li>
+			</ul> -->
 				<!-- The WordPress Menu goes here -->
 			<?php wp_nav_menu(
 				array(
@@ -51,15 +56,10 @@
 					'menu_class' => 'nav navbar-nav pull-right',
 					'fallback_cb' => '',
 					'menu_id' => 'main-menu',
-					'after' => '//',
 					'walker' => new wp_bootstrap_navwalker()
 				)
 			); ?>
-			<ul class="social-media pull-right">
-			<li><a href="https://twitter.com/kathrynrefined" target="_blank"><img src="<?php bloginfo('template_directory'); ?>-child/assets/images/social-twitter.png"></a></li>
-			<li><a href="https://github.com/kathrynstoddard" target="_blank"><img src="<?php bloginfo('template_directory'); ?>-child/assets/images/social-github.png"></a></li>
-			<li><a href="http://www.linkedin.com/in/kathrynpdx/" target="_blank"><img src="<?php bloginfo('template_directory'); ?>-child/assets/images/social-linkedin.png"></a></li>
-	</ul>
+
 </div><!-- .container -->
 				</div><!-- .navbar -->
 			</div>

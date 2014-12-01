@@ -12,10 +12,6 @@
 
 get_header(); ?>
 
-<p>
-  This is the front-page
-</p>
-
 <div class="jumbotron">
       <div class="container">
         <h1><?php bloginfo('title'); ?></h1>
